@@ -1,3 +1,4 @@
+import Education from "./components/Education";
 import Profile from "./components/Profile";
 import "./styles/App.css";
 import { useState } from "react";
@@ -13,6 +14,7 @@ function App() {
     <div className="app-container">
       <h1>CV Builder</h1>
       <Profile editMode={editMode}/>
+      <Education editMode={editMode}/>
       <button onClick={handleEditClick}>{editMode ? "Submit CV" : "Edit CV"}</button>
     </div>
   )
