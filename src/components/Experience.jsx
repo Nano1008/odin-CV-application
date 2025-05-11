@@ -14,7 +14,7 @@ function Experience({ editMode }) {
   };
 
   return (
-    <div className="section">
+    <section>
       <h2>Practical Experience</h2>
       {editMode ? (
         <form>
@@ -60,7 +60,7 @@ function Experience({ editMode }) {
           <p>Until: {experience.dateUntil}</p>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
