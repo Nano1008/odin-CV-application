@@ -19,12 +19,14 @@ function Experience({ editMode }) {
       {editMode ? (
         <form>
           <input
+            type="text"
             name="companyName"
             value={experience.companyName}
             onChange={handleChange}
             placeholder="Company Name"
           />
           <input
+            type="text"
             name="positionTitle"
             value={experience.positionTitle}
             onChange={handleChange}
@@ -37,16 +39,16 @@ function Experience({ editMode }) {
             placeholder="Main Responsibilities"
           />
           <input
+            type="date"
             name="dateFrom"
             value={experience.dateFrom}
             onChange={handleChange}
-            type="date"
           />
           <input
+            type="date"
             name="dateUntil"
             value={experience.dateUntil}
             onChange={handleChange}
-            type="date"
           />
         </form>
       ) : (
